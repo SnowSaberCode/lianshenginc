@@ -19,11 +19,11 @@ export default class ProductListComponent implements OnInit {
   ngOnInit() {
     // Set items array
     this.images = [
-      new ImageItem({ src: '..\\..\\assets\\3.jpg', thumb: 'IMAGE_THUMBNAIL_URL' }),
-      new ImageItem({ src: '..\\..\\assets\\4.jpg', thumb: 'IMAGE_THUMBNAIL_URL' }),
-      new ImageItem({ src: '..\\..\\assets\\5.jpg', thumb: 'IMAGE_THUMBNAIL_URL' }),
-      new ImageItem({ src: '..\\..\\assets\\6.jpg', thumb: 'IMAGE_THUMBNAIL_URL' }),
-      new ImageItem({ src: '..\\..\\assets\\7.jpg', thumb: 'IMAGE_THUMBNAIL_URL' }),
+      new ImageItem({ src: 'assets\\3.jpg', thumb: 'IMAGE_THUMBNAIL_URL' }),
+      new ImageItem({ src: 'assets\\4.jpg', thumb: 'IMAGE_THUMBNAIL_URL' }),
+      new ImageItem({ src: 'assets\\5.jpg', thumb: 'IMAGE_THUMBNAIL_URL' }),
+      new ImageItem({ src: 'assets\\6.jpg', thumb: 'IMAGE_THUMBNAIL_URL' }),
+      new ImageItem({ src: 'assets\\7.jpg', thumb: 'IMAGE_THUMBNAIL_URL' }),
       // ... more items
     ];
   }
