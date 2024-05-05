@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {MatCardModule} from '@angular/material/card';
+import { GetService } from '../../../services/get.service';
 
 @Component({
   selector: 'app-contact-me',
@@ -9,5 +10,12 @@ import {MatCardModule} from '@angular/material/card';
   styleUrl: './contact-me.component.less'
 })
 export default class ContactMeComponent {
+  constructor(private service:GetService) {}
+  posts: any;
 
+  ngOnInit() {
+    this.service.getPosts().subscribe(response => {
+      this.posts = response;
+    })
+  }
 }

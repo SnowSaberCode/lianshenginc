@@ -4,6 +4,7 @@ import { provideRouter } from '@angular/router';
 import { routes } from './app.routes';
 import { provideClientHydration } from '@angular/platform-browser';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { provideHttpClient } from '@angular/common/http';
 
 import { GALLERY_CONFIG, GalleryConfig } from 'ng-gallery';
 
@@ -15,6 +16,7 @@ export const appConfig: ApplicationConfig = {
         autoHeight: true,
         imageSize: 'cover'
       } as GalleryConfig
-    }
+    },
+    provideHttpClient()
   ]
 };
